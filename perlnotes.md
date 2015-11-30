@@ -149,7 +149,7 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
         print $var, "\n";
         # subroutines
         sub hello {
-             local $var = 10;
+             local $var = 10;    # change here for testing
              print $var, "\n";
              gogo(); # calling subroutine gogo
              print $var, "\n";
