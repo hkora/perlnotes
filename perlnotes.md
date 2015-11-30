@@ -1,3 +1,11 @@
+---
+layout: default
+title: perl notes
+---
+<h2>{{ page.title }}</h2>
+<p>testing ...</p>
+<p>{{ page.date | date_to_string }}</p>
+
 ##perl习语（idioms）
 
 _There's more than one way to do it._
