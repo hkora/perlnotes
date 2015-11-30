@@ -1,7 +1,9 @@
 ##perl习语
+
 _There's more than one way to do it._
 
 __The notes are based on "Idiomatic Perl" - Dave Cross.__
+
 在使用perl完成了一个测试框架和看了不少资料后，留下了一些笔记。
 
 1. ||和or的优先级不同
