@@ -230,34 +230,30 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
 
 25. $$当前进程号
 
-26. $<, $( 存储了 real user 和 group IDs
+26. $^O存储当前操作系统
 
-27. $>, $) 存储了 effective 和 and group IDs
+27. %ENV存储所有环境变量
 
-28. $^O存储当前操作系统
-
-29. %ENV存储所有环境变量
-
-30. matched patterns，$1, $2...
+28. matched patterns，$1, $2...
 
         $_ = 'This is a string';
         if (/is (\w+) (\w+)/) {
          print "$1 : $2\n";
         }
 
-31. grep
+29. grep
 
     grep作用在每个元素，每个元素记录在$_，如果符合{}中的判断，才加入到输出列表
 
         @odds = grep { $_ % 2 } @ints;
 
-32. map
+30. map
 
     map作用在每个元素，每个元素记录在$_，所有元素经过{}中的处理，都加入到输出列表
 
         @squares = map { $_ * $_} @ints;
 
-33. 用qq和q方便的表示双引号和单引号
+31. 用qq和q方便的表示双引号和单引号
 
 
         print "<img src=\"$file\" width=\"100\" height=\"50\">";
