@@ -1,4 +1,4 @@
-##perl习语
+##perl习语（idioms）
 
 _There's more than one way to do it._
 
