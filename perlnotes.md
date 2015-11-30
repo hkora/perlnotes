@@ -246,11 +246,13 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
         }
 
 31. grep
+
     grep作用在每个元素，每个元素记录在$_，如果符合{}中的判断，才加入到输出列表
 
         @odds = grep { $_ % 2 } @ints;
 
 32. map
+
     map作用在每个元素，每个元素记录在$_，所有元素经过{}中的处理，都加入到输出列表
 
         @squares = map { $_ * $_} @ints;
