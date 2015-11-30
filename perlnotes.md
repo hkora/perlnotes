@@ -1,4 +1,5 @@
-##perl习语
+##perl习语（idioms）
+
 _There's more than one way to do it._
 
 __The notes are based on "Idiomatic Perl" - Dave Cross.__
@@ -6,6 +7,7 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
 在使用perl完成了一个测试框架和看了不少资料后，留下了一些笔记。
 
 1. ||和or的优先级不同
+
     ||优先级高，or优先级低，这造成了很多问题。
 
     * __or__ 
@@ -147,7 +149,7 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
         print $var, "\n";
         # subroutines
         sub hello {
-             local $var = 10;
+             local $var = 10;    # change here for testing
              print $var, "\n";
              gogo(); # calling subroutine gogo
              print $var, "\n";
@@ -228,32 +230,30 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
 
 25. $$当前进程号
 
-26. $<, $( contain the real user and group IDs
+26. $^O存储当前操作系统
 
-27. $>, $) contain the effective user and group IDs
+27. %ENV存储所有环境变量
 
-28. $^O存储当前操作系统
-
-29. %ENV存储所有环境变量
-
-30. matched patterns，$1, $2...
+28. matched patterns，$1, $2...
 
         $_ = 'This is a string';
         if (/is (\w+) (\w+)/) {
          print "$1 : $2\n";
         }
 
-31. grep
+29. grep
+
     grep作用在每个元素，每个元素记录在$_，如果符合{}中的判断，才加入到输出列表
 
         @odds = grep { $_ % 2 } @ints;
 
-32. map
+30. map
+
     map作用在每个元素，每个元素记录在$_，所有元素经过{}中的处理，都加入到输出列表
 
         @squares = map { $_ * $_} @ints;
 
-33. 用qq和q方便的表示双引号和单引号
+31. 用qq和q方便的表示双引号和单引号
 
 
         print "<img src=\"$file\" width=\"100\" height=\"50\">";
