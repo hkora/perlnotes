@@ -230,9 +230,9 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
 
 25. $$当前进程号
 
-26. $<, $( contain the real user and group IDs
+26. $<, $( 存储了 real user 和 group IDs
 
-27. $>, $) contain the effective user and group IDs
+27. $>, $) 存储了 effective 和 and group IDs
 
 28. $^O存储当前操作系统
 
