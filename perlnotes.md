@@ -12,19 +12,19 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
 
     * __`or`__ 
 
-    这样用or有问题
+    这样用`or`有问题
 
         $a = $b or $c;
     它实际得到的是
 
         ($a = $b) or $c;
-    这时应该用||
+    这时应该用`||`
 
         $a = $b || $c;
 
     * __`||`__
 
-    这样用||有问题
+    这样用`||`有问题
 
         open FILE, $file || die("open $file fail");
 
