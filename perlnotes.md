@@ -6,11 +6,11 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
 
 在使用perl完成了一个测试框架和看了不少资料后，留下了一些笔记。
 
-1. ||和or的优先级不同
+1. `||`和`or`的优先级不同
 
-    ||优先级高，or优先级低，这造成了很多问题。
+    `||`优先级高，`or`优先级低，这造成了很多问题。
 
-    * __or__ 
+    * __`or`__ 
 
     这样用or有问题
 
@@ -22,7 +22,7 @@ __The notes are based on "Idiomatic Perl" - Dave Cross.__
 
         $a = $b || $c;
 
-    * __||__
+    * __`||`__
 
     这样用||有问题
 
