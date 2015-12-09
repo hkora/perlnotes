@@ -1,4 +1,9 @@
-##perl习语（idioms）
+---
+layout: post
+tags: [perl, testing]
+comments: True
+title: perl习语（idioms）
+---
 
 _There's more than one way to do it._
 
